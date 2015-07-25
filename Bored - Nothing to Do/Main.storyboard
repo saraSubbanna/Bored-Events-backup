@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="NothingViewController" customModule="Bored___Nothing_to_Do" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ra-y7-QXf" customClass="MainButtonController" customModule="Bored___Nothing_to_Do" customModuleProvider="target">
+                                <rect key="frame" x="226" y="95" width="150" height="150"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="IVa-IN-hFx"/>
+                                    <constraint firstAttribute="width" constant="150" id="g0V-T8-AnS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="25"/>
+                                <state key="normal" title="Bore'd">
+                                    <color key="titleColor" red="0.98849826389999995" green="0.47132997510000002" blue="0.29510023899999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="moreButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wzu-a2-6IX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nIa-u3-p1R" customClass="MainButtonController" customModule="Bored___Nothing_to_Do" customModuleProvider="target">
+                                <rect key="frame" x="197" y="562" width="162" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="qcd-yX-vO9"/>
+                                    <constraint firstAttribute="width" constant="162" id="qgI-84-2zq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana-BoldItalic" family="Verdana" pointSize="12"/>
+                                <state key="normal" title="Create a Bore'd">
+                                    <color key="titleColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="5jj-aA-nIw" kind="show" id="S3z-U3-aTO"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6kk-BL-rDC">
+                                <rect key="frame" x="16" y="253" width="343" height="279"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <accessibilityTraits key="traits" none="YES" button="YES"/>
+                        </accessibility>
+                        <constraints>
+                            <constraint firstItem="nIa-u3-p1R" firstAttribute="top" secondItem="6kk-BL-rDC" secondAttribute="bottom" constant="30" id="Hae-JR-eGc"/>
+                            <constraint firstItem="6kk-BL-rDC" firstAttribute="top" secondItem="8ra-y7-QXf" secondAttribute="bottom" constant="8" id="JdF-Hq-3Fs"/>
+                            <constraint firstItem="6kk-BL-rDC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Th5-Ms-Q2n"/>
+                            <constraint firstAttribute="centerY" secondItem="8ra-y7-QXf" secondAttribute="centerY" id="WSw-rT-Kgu"/>
+                            <constraint firstItem="nIa-u3-p1R" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Wtv-oH-SJR"/>
+                            <constraint firstItem="8ra-y7-QXf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="75" id="Zkv-bx-UBm"/>
+                            <constraint firstAttribute="centerX" secondItem="8ra-y7-QXf" secondAttribute="centerX" id="lDs-hz-wqk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6kk-BL-rDC" secondAttribute="trailing" id="tbc-mU-PMH"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nIa-u3-p1R" secondAttribute="bottom" constant="8" symbolic="YES" id="w9V-wa-5lf"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="WSw-rT-Kgu"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="rJJ-4j-LtL"/>
+                    <connections>
+                        <outlet property="mainButton" destination="8ra-y7-QXf" id="3P5-v2-L20"/>
+                        <outlet property="nextActivity" destination="6kk-BL-rDC" id="KHZ-ak-2p8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2330" y="4727"/>
+        </scene>
+        <!--Add View Controller-->
+        <scene sceneID="Osj-M2-P1b">
+            <objects>
+                <viewController id="5jj-aA-nIw" customClass="AddViewController" customModule="Bored___Nothing_to_Do" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vei-1q-KBb"/>
+                        <viewControllerLayoutGuide type="bottom" id="LzY-oN-vUE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BWD-eD-p4K">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="New Bore'd: " translatesAutoresizingMaskIntoConstraints="NO" id="jlb-IW-FFp">
+                                <rect key="frame" x="32" y="206" width="311" height="307"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add a Bore'd" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5JW-ug-G4o">
+                                <rect key="frame" x="32" y="36" width="311" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="d7B-7N-d2I"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Huy-QV-cov" customClass="MainButtonController" customModule="Bored___Nothing_to_Do" customModuleProvider="target">
+                                <rect key="frame" x="222" y="543" width="145" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="cvY-ky-YHM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana-BoldItalic" family="Verdana" pointSize="12"/>
+                                <state key="normal" title="Create">
+                                    <color key="titleColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="cvY-ky-YHM"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="createButtonTapped:" destination="5jj-aA-nIw" eventType="touchUpInside" id="Yxu-p1-rUp"/>
+                                    <segue destination="SSg-w7-hWy" kind="show" id="v0W-8H-Cyb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WdT-4a-Ulc" customClass="MainButtonController" customModule="Bored___Nothing_to_Do" customModuleProvider="target">
+                                <rect key="frame" x="26" y="543" width="146" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="tiQ-vd-eex"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana-BoldItalic" family="Verdana" pointSize="12"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="tiQ-vd-eex"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="x2O-VT-vkT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="WdT-4a-Ulc" firstAttribute="width" secondItem="Huy-QV-cov" secondAttribute="width" id="1dT-eR-LeA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5JW-ug-G4o" secondAttribute="trailing" constant="16" id="3lO-hV-XNp"/>
+                            <constraint firstAttribute="bottom" secondItem="WdT-4a-Ulc" secondAttribute="bottom" constant="30" id="6oV-FS-PAy"/>
+                            <constraint firstItem="Huy-QV-cov" firstAttribute="trailing" secondItem="BWD-eD-p4K" secondAttribute="trailingMargin" id="AK6-BB-3Fj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jlb-IW-FFp" secondAttribute="trailing" constant="16" id="Evv-5a-nA2"/>
+                            <constraint firstItem="jlb-IW-FFp" firstAttribute="leading" secondItem="BWD-eD-p4K" secondAttribute="leadingMargin" constant="16" id="KWf-5K-WHq"/>
+                            <constraint firstItem="jlb-IW-FFp" firstAttribute="top" secondItem="5JW-ug-G4o" secondAttribute="bottom" constant="20" id="LuF-14-eME"/>
+                            <constraint firstItem="5JW-ug-G4o" firstAttribute="leading" secondItem="BWD-eD-p4K" secondAttribute="leadingMargin" constant="16" id="NR8-T4-lpf"/>
+                            <constraint firstItem="WdT-4a-Ulc" firstAttribute="leading" secondItem="BWD-eD-p4K" secondAttribute="leadingMargin" constant="10" id="Qzo-Cy-6HU"/>
+                            <constraint firstItem="Huy-QV-cov" firstAttribute="top" secondItem="jlb-IW-FFp" secondAttribute="bottom" constant="30" id="SdD-B3-Odh"/>
+                            <constraint firstItem="5JW-ug-G4o" firstAttribute="top" secondItem="vei-1q-KBb" secondAttribute="bottom" constant="16" id="VjW-gU-lSH"/>
+                            <constraint firstItem="Huy-QV-cov" firstAttribute="trailing" secondItem="BWD-eD-p4K" secondAttribute="trailingMargin" constant="8" id="WKZ-eU-ieX"/>
+                            <constraint firstItem="Huy-QV-cov" firstAttribute="leading" secondItem="WdT-4a-Ulc" secondAttribute="trailing" constant="50" id="WSX-NL-Jgd"/>
+                            <constraint firstItem="Huy-QV-cov" firstAttribute="bottom" secondItem="jlb-IW-FFp" secondAttribute="bottom" id="h7C-Z7-IGN"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="jlb-IW-FFp" secondAttribute="bottom" constant="16" id="k0I-pm-V1e"/>
+                            <constraint firstItem="WdT-4a-Ulc" firstAttribute="leading" secondItem="jlb-IW-FFp" secondAttribute="leading" id="nCs-xh-1JA"/>
+                            <constraint firstItem="LzY-oN-vUE" firstAttribute="top" secondItem="Huy-QV-cov" secondAttribute="bottom" constant="30" id="oF4-pN-JzW"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="k0I-pm-V1e"/>
+                                <exclude reference="nCs-xh-1JA"/>
+                                <exclude reference="AK6-BB-3Fj"/>
+                                <exclude reference="h7C-Z7-IGN"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="600"/>
+                    <connections>
+                        <outlet property="newActivityDescription" destination="jlb-IW-FFp" id="xgd-Kp-fIa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yct-MX-wam" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1826" y="4009"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ggw-Gj-b3p">
+            <objects>
+                <viewController id="SSg-w7-hWy" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ab7-bD-vu0"/>
+                        <viewControllerLayoutGuide type="bottom" id="aIS-ck-g5z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AKy-kj-av8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bore'd" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KbU-Jw-cF9">
+                                <rect key="frame" x="32" y="36" width="311" height="230"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="35"/>
+                                <color key="textColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="etI-gT-5Ck" customClass="MainButtonController" customModule="Bored___Nothing_to_Do" customModuleProvider="target">
+                                <rect key="frame" x="217" y="550" width="110" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="edh-IB-0ro"/>
+                                </constraints>
+                                <state key="normal" title="Exit">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="KQV-IO-adH"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Saved" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B54-MV-fBs">
+                                <rect key="frame" x="32" y="274" width="311" height="229"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="35"/>
+                                <color key="textColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="B54-MV-fBs" firstAttribute="width" secondItem="KbU-Jw-cF9" secondAttribute="width" id="7il-sx-I5T"/>
+                            <constraint firstItem="B54-MV-fBs" firstAttribute="top" secondItem="KbU-Jw-cF9" secondAttribute="bottom" constant="5" id="C1P-ib-POB"/>
+                            <constraint firstItem="KbU-Jw-cF9" firstAttribute="top" secondItem="Ab7-bD-vu0" secondAttribute="bottom" constant="16" id="GYE-xg-KSG"/>
+                            <constraint firstItem="B54-MV-fBs" firstAttribute="leading" secondItem="AKy-kj-av8" secondAttribute="leadingMargin" constant="16" id="KUD-Jh-APF"/>
+                            <constraint firstItem="aIS-ck-g5z" firstAttribute="top" secondItem="B54-MV-fBs" secondAttribute="bottom" constant="100" id="OSV-Sp-a37"/>
+                            <constraint firstItem="B54-MV-fBs" firstAttribute="height" secondItem="KbU-Jw-cF9" secondAttribute="height" id="RSc-6Q-dgl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="KbU-Jw-cF9" secondAttribute="trailing" constant="16" id="ZKq-FC-Nzz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="etI-gT-5Ck" secondAttribute="trailing" constant="32" id="kgE-L8-A5E"/>
+                            <constraint firstItem="KbU-Jw-cF9" firstAttribute="leading" secondItem="AKy-kj-av8" secondAttribute="leadingMargin" constant="16" id="q8u-JX-Gqu"/>
+                            <constraint firstAttribute="bottom" secondItem="etI-gT-5Ck" secondAttribute="bottom" constant="20" symbolic="YES" id="qJ1-iC-pUY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="B54-MV-fBs" secondAttribute="trailing" constant="16" id="za7-3V-VKb"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dWU-lC-TvD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2516" y="4035"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="x2O-VT-vkT"/>
+    </inferredMetricsTieBreakers>
+</document>
